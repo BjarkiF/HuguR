@@ -3,8 +3,11 @@ import { Link, Outlet } from 'react-router-dom';
 
 const DashboardView = () => {
     return (
-        <h2>Dashboard here</h2>
-    )
+        <div>
+            <h2>Dashboard here</h2>
+            <p>Lorem Ipsum!</p>
+        </div>
+    )   
 };
 
 export default DashboardView;
