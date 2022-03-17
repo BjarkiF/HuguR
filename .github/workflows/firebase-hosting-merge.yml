@@ -18,3 +18,4 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_HUGUR_PROJECT }}'
           channelId: live
           projectId: hugur-project
+          entryPoint: hugur
