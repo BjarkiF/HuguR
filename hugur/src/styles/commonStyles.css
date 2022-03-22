@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+body {
+    font-family: dosis;
+    font-size: 1.6em;
+    text-align: center;
+    background-color: #F9FAFF;
+    color: #073044;
+}   
+
+#Title{
+    text-align: center;
+}
+
+#wip{
+    text-align: center;
+}

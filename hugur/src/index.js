@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './styles/commonStyles.css';
 import './utils/firebase';
 import App from './App';
 import reportWebVitals from './reportWebVitals';

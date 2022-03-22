@@ -4,8 +4,7 @@ import { Link, Outlet } from 'react-router-dom';
 const DashboardView = () => {
     return (
         <div>
-            <h2>Dashboard here</h2>
-            <p>Lorem Ipsum!</p>
+            <h3 id="wip">Coming Soon!</h3>
         </div>
     )   
 };
