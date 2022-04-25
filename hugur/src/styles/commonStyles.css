@@ -15,3 +15,11 @@ body {
 #wip{
     text-align: center;
 }
+
+
+#mainBody {
+    background-color: '#470283';
+    flex: 1;
+    justify-content: 'space-evenly';
+    align-items: 'center';
+}
