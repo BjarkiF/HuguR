@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import styles from '../../Resources/styles'
+//import styles from '../../Resources/styles'
 // import '../../styles/commonStyles'
-import './dashStyle.css'
+//import './dashStyle.css'
+import DashboardCardList from '../../Components/DashboardCardList';
 
 const DashboardView = () => {
 
-    const pages = ['Eat well', 'Exercise', 'Moodbooster', 'Programs', 'Relax', 'Sleep', 'Book with counceller']
+    const pages = ['Eat well', 'Exercise', 'Moodbooster', 'Programs', 'Relax', 'Sleep', 'Book with councellor']
 
     const pageList = pages.map(page =>
             <div className='pageDiv'>
@@ -17,10 +18,8 @@ const DashboardView = () => {
         );
 
     return (
-        // <div style={styles.main}>
         <div id='mainBody'>
-            <h3 id="wip">Coming Soon!</h3>
-            {pageList}
+            {DashboardCardList}
         </div>
     )   
 };
