@@ -7,14 +7,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import DashboardView from "./views/DashboardView";
+import CouncellerView from './views/CouncellerView';
 
 ReactDOM.render(
   <Router>
     <App />
     <Routes>
-      <Route path ="/" element={ <DashboardView /> } >
-      
-      </Route>
+      <Route path ="/" element={ <DashboardView /> } ></Route>
+      <Route path ="/councel" element={ <CouncellerView /> } ></Route>
     </Routes>
   </Router>,
   document.getElementById('root')
