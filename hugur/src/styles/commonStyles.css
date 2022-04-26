@@ -4,7 +4,7 @@ body {
     font-family: dosis;
     font-size: 1.6em;
     text-align: center;
-    background-color: #F9FAFF;
+    background-color: #FCFCFC;
     color: #073044;
 }   
 
@@ -14,4 +14,19 @@ body {
 
 #wip{
     text-align: center;
+}
+
+
+#mainBody {
+    background-color: yellow;
+    display: flex;
+    /* flex: 1;
+    justify-content: space-evenly;
+    align-items: center; */
+}
+
+.pageDiv {
+    color: blue;
+    height: 100;
+    width: 100;
 }

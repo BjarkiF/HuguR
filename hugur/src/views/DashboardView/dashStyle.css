@@ -1,0 +1,15 @@
+#mainBody {
+    /*background-color: yellow;
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: center; */
+}
+
+.pageDiv {
+    /* color: blue;
+    height: 100;
+    width: 100; */
+    border: 2px;
+    border-color: black;
+}

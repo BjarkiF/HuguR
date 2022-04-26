@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
 
-const DashboardView = () => {
+const MoodboosterView = () => {
     return (
         <div>
-            <h3 id="wip">Coming Soon!</h3>
+            <h3 id="wip">Moodboost well!</h3>
         </div>
     )   
 };
 
-export default DashboardView;
+export default MoodboosterView;
