@@ -8,14 +8,11 @@ const DashboardView = () => {
 
     const pageList = pages.map(page =>
             <div className='pageDiv'>
-                <h3 id="wip">
-                    {page}
-                </h3>
+                <h3 id="wip">{page}</h3>
             </div>
         );
 
     return (
-        // <div style={styles.main}>
         <div id='mainBody'>
             {pageList}
         </div>

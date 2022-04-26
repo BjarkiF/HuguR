@@ -8,6 +8,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import DashboardView from "./views/DashboardView";
 import CouncellerView from './views/CouncellerView';
+import EatView from './views/EatView';
 
 ReactDOM.render(
   <Router>
@@ -15,6 +16,7 @@ ReactDOM.render(
     <Routes>
       <Route path ="/" element={ <DashboardView /> } ></Route>
       <Route path ="/councel" element={ <CouncellerView /> } ></Route>
+      <Route path ="/eat" element={ <EatView /> } ></Route>
     </Routes>
   </Router>,
   document.getElementById('root')
