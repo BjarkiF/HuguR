@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
+import './eatStyle.css'
 
-const ProgramView = () => {
+const EatView = () => {
+
     const fields = ['Exercises', 'Helpful Videos', 'General Advice'];
 
-    const category = 'programs';
+    const category = 'eat';
 
     const fieldList = fields.map(field =>
         // Should the whole div be clickable ? 
@@ -19,7 +21,7 @@ const ProgramView = () => {
             <h3 id="wip">Self help tools</h3>
             {fieldList}
         </div>
-    )     
+    )   
 };
 
-export default ProgramView;
+export default EatView;

@@ -7,9 +7,9 @@
 }
 
 .pageDiv {
-    /* color: blue;
-    height: 100;
-    width: 100; */
-    border: 2px;
+    color: blue;
+    height: 25%;
+    width: 25%;
+    border: 10px;
     border-color: black;
 }
