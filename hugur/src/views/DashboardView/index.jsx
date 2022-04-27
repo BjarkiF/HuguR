@@ -1,21 +1,24 @@
+import { Typography } from '@mui/material';
+import { Box } from '@mui/system';
 import React from 'react';
-import { Link, Outlet } from 'react-router-dom';
-import './dashStyle.css'
+import DashboardCardList from '../../Components/DashboardCardList';
+import WelcomeHeader from '../../Components/WelcomeHeader';
 
 const DashboardView = () => {
-
-    const pages = ['Eat well', 'Exercise', 'Moodbooster', 'Programs', 'Relax', 'Sleep', 'Book with counceller']
-
-    const pageList = pages.map(page =>
-            <div className='pageDiv'>
-                <h3 id="wip">{page}</h3>
-            </div>
-        );
-
     return (
-        <div id='mainBody'>
-            {pageList}
-        </div>
+        <Box>
+            <Box>
+                <WelcomeHeader />
+            </Box>
+            <Box mb={5} mt={5}>
+                <Typography variant="h4" component="div">
+                    Self-Help Tools
+                </Typography>
+            </Box>
+            <Box>
+                <DashboardCardList />
+            </Box>
+        </Box>
     )   
 };
 
