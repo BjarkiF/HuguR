@@ -10,6 +10,12 @@ import DashboardView from "./views/DashboardView";
 import CouncellerView from './views/CouncellerView';
 import EatView from './views/EatView';
 import GeneralAdviceView from './views/GeneralAdviceView';
+import ExerciseView from './views/ExerciseView';
+import MoodBoosterView from './views/MoodboosterView';
+import ProgramView from './views/ProgramView';
+import RelaxView from './views/RelaxView';
+import SleepView from './views/SleepView';
+
 
 ReactDOM.render(
   <Router>
