@@ -5,8 +5,8 @@ const GeneralAdviceView = () => {
     const { category } = useParams();
 
     return(
-        <div>
-            <h3 id="wip">Content here for {category}</h3>
+        <div    >
+            <h3>Content here for {category}</h3>
             hello
         </div>
     )

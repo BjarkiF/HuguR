@@ -7,11 +7,13 @@ const SleepView = () => {
     const category = 'sleep';
 
     const fieldList = fields.map(field =>
-        // Should the whole div be clickable ? 
-        <div className='field' onClick={console.log('hello')}>
-            <Link to={`advice/${category}`}></Link>
-            <p>{field}</p>
-        </div>
+
+
+        <Link to={`/advice/${category}`}>
+            <div className='field' onClick={console.log('hello')}>
+                    <p>{field}</p>
+            </div>
+        </Link>
     );
 
     return (

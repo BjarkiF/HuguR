@@ -15,6 +15,7 @@ import MoodBoosterView from './views/MoodboosterView';
 import ProgramView from './views/ProgramView';
 import RelaxView from './views/RelaxView';
 import SleepView from './views/SleepView';
+import Footer from './Components/Footer';
 
 
 ReactDOM.render(
@@ -31,6 +32,7 @@ ReactDOM.render(
       <Route path="/sleep" element={ <SleepView /> } />
       <Route path="/advice/:category" element={ <GeneralAdviceView />} />
     </Routes>
+    <Footer />
   </Router>,
   document.getElementById('root')
 );
