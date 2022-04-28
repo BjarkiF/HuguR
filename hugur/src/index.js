@@ -21,16 +21,15 @@ ReactDOM.render(
   <Router>
     <App />
     <Routes>
-      <Route path="/" element={ <DashboardView /> } >
-        <Route path="councel" element={ <CouncellerView /> } />
-        <Route path="/eat" element={ <EatView /> } />
-        <Route path="/exercise" element={ <ExerciseView /> } />
-        <Route path="/moodboost" element={ <MoodBoosterView /> } />
-        <Route path="/programs" element={ <ProgramView /> } />
-        <Route path="/relax" element={ <RelaxView /> } />
-        <Route path="/sleep" element={ <SleepView /> } />
-        <Route path="advice/:category" element={ <GeneralAdviceView />} />
-      </Route>
+      <Route path="/" element={ <DashboardView /> } />
+      <Route path="/councel" element={ <CouncellerView /> } />
+      <Route path="/eat" element={ <EatView /> } />
+      <Route path="/exercise" element={ <ExerciseView /> } />
+      <Route path="/moodboost" element={ <MoodBoosterView /> } />
+      <Route path="/programs" element={ <ProgramView /> } />
+      <Route path="/relax" element={ <RelaxView /> } />
+      <Route path="/sleep" element={ <SleepView /> } />
+      <Route path="/advice/:category" element={ <GeneralAdviceView />} />
     </Routes>
   </Router>,
   document.getElementById('root')

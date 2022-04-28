@@ -11,8 +11,9 @@ const EatView = () => {
     const fieldList = fields.map(field =>
         // Should the whole div be clickable ? 
         <div className='field' onClick={console.log('hello')}>
-            <Link to={'advice/${category}'}></Link>
-            <p>{field}</p>
+            <Link to={`advice/${category}`}>
+                <p>{field}</p>
+                </Link>
         </div>
     );
 

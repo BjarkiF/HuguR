@@ -1,12 +1,13 @@
 import React from "react";
-import { Route, Link, UseParams, useParams } from "react-router-dom";
+import { Route, Link, useParams } from "react-router-dom";
 
 const GeneralAdviceView = () => {
-    const category = useParams();
+    const { category } = useParams();
 
     return(
         <div>
-            <h3>Content here</h3>
+            <h3 id="wip">Content here for {category}</h3>
+            hello
         </div>
     )
 };
