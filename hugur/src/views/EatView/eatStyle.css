@@ -1,0 +1,12 @@
+.field {
+    border-radius: 10px;
+    background-color: red;
+    height: 40%;
+    width: 80%;
+}
+
+
+.main_body {
+    display: flex;
+    align-content: center;
+}
