@@ -3,13 +3,13 @@ import { Link, Outlet } from 'react-router-dom';
 import './eatStyle.css'
 
 function get_url(field) {
-    const url = "";
+    var url;
     if(field == 'Exercises') {
-        url = "exercises";
+        url = 'exercises';
     } else if(field == 'Helpful Videos') {
-        url = "videos";
+        url = 'videos';
     } else if(field == 'General Advice') {
-        url = "advice";
+        url = 'advice';
     }
     return url;
 }
@@ -22,7 +22,7 @@ const EatView = () => {
 
     // Idea here that get_url returns whatever url we need for the first part of url
     const fieldList = fields.map(field =>
-        <Link to={`/${get_url(field)}/${category}`}> {/* This breaks the site */}
+        <Link to={`/${get_url(field)}/${category}`}>
             <div className='field' onClick={console.log('hello')}>
                 <p>{field}</p>
             </div>
