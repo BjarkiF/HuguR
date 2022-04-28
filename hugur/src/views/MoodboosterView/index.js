@@ -4,7 +4,7 @@ import { Link, Outlet } from 'react-router-dom';
 const MoodboosterView = () => {
     const fields = ['Exercises', 'Helpful Videos', 'General Advice'];
 
-    const category = 'eat';
+    const category = 'moodbooster';
 
     const fieldList = fields.map(field =>
         // Should the whole div be clickable ? 
