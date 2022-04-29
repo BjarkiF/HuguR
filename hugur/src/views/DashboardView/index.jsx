@@ -3,6 +3,7 @@ import { Box } from '@mui/system';
 import React from 'react';
 import DashboardCardList from '../../Components/DashboardCardList';
 import WelcomeHeader from '../../Components/WelcomeHeader';
+import cards from '../../data/Cards';
 
 const DashboardView = () => {
     return (
@@ -16,7 +17,7 @@ const DashboardView = () => {
                 </Typography>
             </Box>
             <Box>
-                <DashboardCardList />
+                <DashboardCardList cards={cards}/>
             </Box>
         </Box>
     )   

@@ -6,20 +6,25 @@ import './utils/firebase';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import CouncellerView from "./views/CouncellerView";
 import DashboardView from "./views/DashboardView";
-import CouncellerView from './views/CouncellerView';
-import EatView from './views/EatView';
+import EatView from "./views/EatView";
+import ExerciseView from "./views/ExerciseView";
 import GeneralAdviceView from './views/GeneralAdviceView';
+import MoodboosterView from './views/MoodboosterView';
+import ProgramView from './views/ProgramView';
+import RelaxView from './views/RelaxView';
+import SleepView from './views/SleepView';
 
 ReactDOM.render(
   <Router>
     <App />
     <Routes>
       <Route path="/" element={ <DashboardView /> } >
-        <Route path="councel" element={ <CouncellerView /> } />
+        <Route path="/councel" element={ <CouncellerView /> } />
         <Route path="/eat" element={ <EatView /> } />
         <Route path="/exercise" element={ <ExerciseView /> } />
-        <Route path="/moodboost" element={ <MoodBoosterView /> } />
+        <Route path="/moodboost" element={ <MoodboosterView /> } />
         <Route path="/programs" element={ <ProgramView /> } />
         <Route path="/relax" element={ <RelaxView /> } />
         <Route path="/sleep" element={ <SleepView /> } />
