@@ -6,9 +6,10 @@ import './utils/firebase';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import CouncellerView from "./views/CouncellerView";
 import DashboardView from "./views/DashboardView";
-import CouncellerView from './views/CouncellerView';
-import EatView from './views/EatView';
+import EatView from "./views/EatView";
+import ExerciseView from "./views/ExerciseView";
 import GeneralAdviceView from './views/GeneralAdviceView';
 import ExerciseView from './views/ExerciseView';
 import MoodBoosterView from './views/MoodboosterView';
@@ -18,7 +19,6 @@ import SleepView from './views/SleepView';
 import Footer from './Components/Footer';
 import HelpfulVideosView from './views/HelpfulVideosView';
 import GeneralExerciseView from './views/GeneralExerciseView';
-
 
 ReactDOM.render(
   <Router>
