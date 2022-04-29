@@ -11,7 +11,6 @@ import DashboardView from "./views/DashboardView";
 import EatView from "./views/EatView";
 import ExerciseView from "./views/ExerciseView";
 import GeneralAdviceView from './views/GeneralAdviceView';
-import ExerciseView from './views/ExerciseView';
 import MoodBoosterView from './views/MoodboosterView';
 import ProgramView from './views/ProgramView';
 import RelaxView from './views/RelaxView';

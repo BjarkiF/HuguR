@@ -21,7 +21,7 @@ class NavBar extends React.Component {
     }
     render() {
         return(
-            <AppBar position="static" sx={{ display:'flex', flexDirection:'row', backgroundColor:'#FCFCFC' }}>
+            <AppBar position="static" elevation={0} sx={{ display:'flex', flexDirection:'row', backgroundColor:'#FCFCFC' }}>
                 <IconButton component={Link} to="/">
                     <Box
                         component="img" 
