@@ -4,14 +4,15 @@ import { Link, Outlet } from 'react-router-dom';
 const MoodboosterView = () => {
     const fields = ['Exercises', 'Helpful Videos', 'General Advice'];
 
-    const category = 'eat';
+    const category = 'moodbooster';
 
     const fieldList = fields.map(field =>
         // Should the whole div be clickable ? 
-        <div className='field' onClick={console.log('hello')}>
-            <Link to={'advice/${category}'}></Link>
-            <p>{field}</p>
-        </div>
+        <Link to={`/${field.trim().toLowerCase()}/${category}`}>
+            <div className='field' onClick={console.log('hello')}>
+                    <p>{field}</p>
+            </div>
+        </Link>
     );
 
     return (

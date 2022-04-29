@@ -15,23 +15,28 @@ import MoodBoosterView from './views/MoodboosterView';
 import ProgramView from './views/ProgramView';
 import RelaxView from './views/RelaxView';
 import SleepView from './views/SleepView';
+import Footer from './Components/Footer';
+import HelpfulVideosView from './views/HelpfulVideosView';
+import GeneralExerciseView from './views/GeneralExerciseView';
 
 
 ReactDOM.render(
   <Router>
     <App />
     <Routes>
-      <Route path="/" element={ <DashboardView /> } >
-        <Route path="councel" element={ <CouncellerView /> } />
-        <Route path="/eat" element={ <EatView /> } />
-        <Route path="/exercise" element={ <ExerciseView /> } />
-        <Route path="/moodboost" element={ <MoodBoosterView /> } />
-        <Route path="/programs" element={ <ProgramView /> } />
-        <Route path="/relax" element={ <RelaxView /> } />
-        <Route path="/sleep" element={ <SleepView /> } />
-        <Route path="advice/:category" element={ <GeneralAdviceView />} />
-      </Route>
+      <Route path="/" element={ <DashboardView /> } />
+      <Route path="/councel" element={ <CouncellerView /> } />
+      <Route path="/eat" element={ <EatView /> } />
+      <Route path="/exercise" element={ <ExerciseView /> } />
+      <Route path="/moodboost" element={ <MoodBoosterView /> } />
+      <Route path="/programs" element={ <ProgramView /> } />
+      <Route path="/relax" element={ <RelaxView /> } />
+      <Route path="/sleep" element={ <SleepView /> } />
+      <Route path="/general%20advice/:category" element={ <GeneralAdviceView />} />
+      <Route path="/helpful%20videos/:category" element={ <HelpfulVideosView />} />
+      <Route path="/exercises/:category" element={ <GeneralExerciseView />} />
     </Routes>
+    <Footer />
   </Router>,
   document.getElementById('root')
 );

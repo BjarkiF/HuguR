@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Link, useParams } from "react-router-dom";
 
-const GeneralAdviceView = () => {
+const GeneralExerciseView = () => {
     const { category } = useParams();
 
     return(
@@ -12,4 +12,4 @@ const GeneralAdviceView = () => {
     )
 };
 
-export default GeneralAdviceView;
+export default GeneralExerciseView;
