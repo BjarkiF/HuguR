@@ -9,7 +9,7 @@ const SleepView = () => {
     const fieldList = fields.map(field =>
 
 
-        <Link to={`/advice/${category}`}>
+        <Link to={`/${field.trim().toLowerCase()}/${category}`}>
             <div className='field' onClick={console.log('hello')}>
                     <p>{field}</p>
             </div>
