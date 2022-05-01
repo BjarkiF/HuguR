@@ -28,6 +28,11 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     padding: 10px;
     margin: 5px;
 }
+.CardLink{
+    text-decoration: none;
+    color: inherit;
+
+}
 
 .CardDescription{
     text-align: left;
@@ -37,6 +42,7 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
 .Card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    
 }
 
 

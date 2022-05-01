@@ -10,13 +10,14 @@ import './DashCard.css'
 const DashCard = ({ card }) => {
     return (
 
-        <CardActionArea component={Link} to={card.path}>
+            <Link className='CardLink' to={card.path}>
             <div className='Card'>
                 <div className='CardName'>{card.name} </div>
                 <img className='ImgStyle' src={card.img} alt='CardImage' />
                 <div className='CardDescription'>{card.description} </div>
             </div>
-        </CardActionArea>
+        </Link>
+       
     )
 }
 
