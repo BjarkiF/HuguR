@@ -8,7 +8,7 @@ const ExerciseView = () => {
 
     const fieldList = fields.map(field =>
         // Should the whole div be clickable ? 
-        <Link to={`/${field.trim().toLowerCase()}/${category}`}> {/* TODO: check if better way than extra function*/}
+        <Link className='SectionLink' to={`/${field.trim().toLowerCase()}/${category}`}> {/* TODO: check if better way than extra function*/}
             <div className='field' onClick={console.log('hello')}>
                     <p>{field}</p>
             </div>

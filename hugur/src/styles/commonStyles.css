@@ -5,7 +5,7 @@ body {
     font-size: 1.6em;
     text-align: center;
     background-color: #FCFCFC;
-    color: #073044;
+    color: #073044;    
 }   
 
 #Title{
@@ -14,13 +14,14 @@ body {
 
 #wip{
     text-align: center;
-    font-size: medium;
+    font-size: larger;
 }
 
 
 #mainBody {
     background-color: whitesmoke;
     display: flex;
+    
     /* flex: 1;
     justify-content: space-evenly;
     align-items: center; */
@@ -30,4 +31,9 @@ body {
     color: blue;
     height: 25%;
     width: 25%;
+}
+
+
+.mainBody{
+    height: 80%;
 }

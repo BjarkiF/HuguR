@@ -1,0 +1,28 @@
+.GeneralExercise{
+    height: 76%;
+}
+
+.ExerciseBackground{
+    background-color: #E6F1D8;
+    height: 94%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Circle{
+    border-radius: 100%;
+    background-color: orange;
+    height: 80px;
+    width: 80px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Circle > img {
+    height: 20px;
+    padding-left: 5px;
+}
