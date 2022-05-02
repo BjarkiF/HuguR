@@ -1,31 +1,23 @@
 import React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import { CardActionArea } from '@mui/material';
+import { CardActionArea, dividerClasses } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import CardMedia from '@mui/material/CardMedia';
 import { Link } from 'react-router-dom';
+import './DashCard.css'
 
 const DashCard = ({ card }) => {
     return (
-        <Card raised='true'>
-            <CardActionArea component={Link} to={card.path}>
-                <CardMedia 
-                    component="img"
-                    height="250"
-                    src={card.img}
-                    alt="Card Illustration"
-                />
-                <CardContent>
-                    <Typography variant="h5" component="div">
-                        {card.name}
-                    </Typography>
-                    <Typography variant="body2">
-                        {card.description}
-                    </Typography>
-                </CardContent>
-            </CardActionArea>
-        </Card>
+
+            <Link className='CardLink' to={card.path}>
+            <div className='Card'>
+                <div className='CardName'>{card.name} </div>
+                <img className='ImgStyle' src={card.img} alt='CardImage' />
+                <div className='CardDescription'>{card.description} </div>
+            </div>
+        </Link>
+       
     )
 }
 

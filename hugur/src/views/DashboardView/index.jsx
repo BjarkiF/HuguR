@@ -12,7 +12,7 @@ const DashboardView = () => {
                 <WelcomeHeader />
             </Box>
             <Box mb={5} mt={5}>
-                <Typography variant="h4" component="div">
+                <Typography variant="h4" sx={{  fontWeight: 'bold', fontFamily:'dosis'}} component="div">
                     Self-Help Tools
                 </Typography>
             </Box>
