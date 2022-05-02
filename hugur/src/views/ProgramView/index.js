@@ -8,7 +8,7 @@ const ProgramView = () => {
 
     const fieldList = fields.map(field =>
         // Should the whole div be clickable ? 
-        <Link to={`/${field.trim().toLowerCase()}/${category}`}>
+        <Link className='SectionLink' to={`/${field.trim().toLowerCase()}/${category}`}>
             <div className='field' onClick={console.log('hello')}>
                     <p>{field}</p>
             </div>
@@ -17,7 +17,7 @@ const ProgramView = () => {
 
     return (
         <div className='mainBody'>
-            <h3 id="wip">Self help tools</h3>
+            <h3 id="wip">Self-help tools</h3>
             {fieldList}
         </div>
     )     

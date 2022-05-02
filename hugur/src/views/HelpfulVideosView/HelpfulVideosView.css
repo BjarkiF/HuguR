@@ -1,0 +1,43 @@
+
+
+.HelpfulVideosView__CardSection {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.HelpfulVideosView__Card {
+    background-image: url('https://icons8.com/illustrations/illustration/bonbon-mom-and-daughter-make-chocolate-cupcakes-with-strawberries-together');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    height: 250px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.HelpfulVideosView__PlayLogo {
+    border-radius: 100%;
+    background-color: #3BCBA4;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.HelpfulVideosView__PlayLogo > img {
+    height: 20px;
+    padding-left: 5px;
+}
+
+.HelpfulVideosView{
+    display: flex;
+    flex-flow: column;
+    margin: 10px;
+    height: 80%;
+}

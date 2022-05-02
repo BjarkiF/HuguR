@@ -1,0 +1,13 @@
+.AdviceDescription{
+    text-align: justify;
+    font-size: 21px;
+    color: #5e615e;
+    padding: 30px;
+    margin: 23px 35px;
+}
+
+.AdviceImg{
+    padding: 15px;   
+    height: 50%;
+    width: 50%; 
+}
