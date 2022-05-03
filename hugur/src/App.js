@@ -1,7 +1,13 @@
+import NavBar from "./Components/NavBar";
+import React, { useEffect } from 'react';
+
 function App() {
+  useEffect(() => {
+    document.title = "HuguR"
+  }, [])
   return (
     <div className="App">
-    <h1 id="title">HuguR</h1>
+      <NavBar />
     </div>
   );
 }

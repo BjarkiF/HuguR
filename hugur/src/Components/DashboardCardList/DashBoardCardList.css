@@ -1,0 +1,10 @@
+.cardContainer{
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 1200px) {
+    .DashCardList {
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+    }
+  }

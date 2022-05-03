@@ -1,0 +1,22 @@
+.field{
+    display: flex;
+    flex-flow: column;
+    padding: 50px;
+    align-items: flex-center;
+    margin: 65px 80px;
+    border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);    
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.field:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    
+}
+.SectionLink{
+    text-decoration: none;
+    color: inherit;
+}
