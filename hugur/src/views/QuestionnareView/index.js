@@ -3,7 +3,7 @@ import Questionnaire from "../../Components/Questionnaire";
 
 const QuestionnaireView = () => {
     return(
-        <Questionnaire />
+        <Questionnaire qcode={""}/>
     );
 }
 
