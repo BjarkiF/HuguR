@@ -12,8 +12,8 @@ const DashboardView = () => {
                 <WelcomeHeader />
             </Box>
             <Box mb={5} mt={5}>
-                <Typography variant="h4" sx={{  fontWeight: 'bold', fontFamily:'dosis'}} component="div">
-                    Self-Help Tools
+                <Typography variant="h4" sx={{  fontWeight: 'medium', fontFamily:'dosis'}} component="div">
+                    HuguR offers the following Self-Help Tools
                 </Typography>
             </Box>
             <Box>
