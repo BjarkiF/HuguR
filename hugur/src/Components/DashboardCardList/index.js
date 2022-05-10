@@ -9,8 +9,8 @@ const DashboardCardList = ({ cards }) => {
         <Box className='DashCardList' sx={{ flexGrow: 1, pl: 10, pr: 10}}>
             <Grid className='cardContainer' container spacing={2}>
                 {cards.map((card) => (
-                    <Grid key={card.name}item lg={4}>
-                        <DashCard card={card} />
+                    <Grid key={card.id}item lg={4}>
+                        <DashCard card={card.data()} />
                     </Grid>
                 ))}
             </Grid>

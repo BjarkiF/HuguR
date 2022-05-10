@@ -1,11 +1,36 @@
 import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import DashboardCardList from '../../Components/DashboardCardList';
 import WelcomeHeader from '../../Components/WelcomeHeader';
-import cards from '../../data/Cards';
+//import cards from '../../data/Cards';
+import { db } from '../../utils/firebase';
+import { collection, getDocs } from 'firebase/firestore';
 
-const DashboardView = () => {
+const DashboardView = props => {
+    const [cards, setCards] = useState([]);
+    const [status, setStatus] = useState(false);
+
+    useEffect(() => {
+        if (!status) {
+            fetchCards();
+            updateStatus(true);
+        }
+    });
+
+    const fetchCards = async () => {
+        const response = await getDocs(collection(db, "categories"));
+
+        response.forEach((item)=>{
+            console.log(item);
+            setCards([...cards, item]);
+        });
+    };
+
+    const updateStatus = (bool) => {
+            setStatus(bool);
+    }
+
     return (
         <Box>
             <Box>

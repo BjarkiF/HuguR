@@ -32,8 +32,8 @@ class NavBar extends React.Component {
                 </IconButton>
                 <Container maxWidth="xl" sx={{ display:'flex', flexDirection:'row-reverse' }}>
                     <Toolbar sx={{ display:'flex', flexDirection:'row', color:'#000000' }}>
-                        <Typography variant="h6" sx={{ fontFamily:'dosis', mr:1 }}>IS</Typography>
-                        <Typography variant="h6" sx={{ fontFamily:'dosis', mr:5 }}>EN</Typography>
+                        <Typography variant="h6" onClick={() => {this.handleClick(1)}} sx={{ fontFamily:'dosis', mr:1 }}>IS</Typography>
+                        <Typography variant="h6" onClick={() => {this.handleClick(1)}} sx={{ fontFamily:'dosis', mr:5 }}>EN</Typography>
                         <PersonIcon sx={{ color:'#81B93E', mr:0.5 }}/>
                         <Typography variant="h5" sx={{ fontFamily:'dosis', mr:2 }}>Log In</Typography>
                     </Toolbar>
