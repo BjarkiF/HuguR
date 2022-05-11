@@ -18,7 +18,7 @@ import SleepView from './views/SleepView';
 import Footer from './Components/Footer';
 import HelpfulVideosView from './views/HelpfulVideosView';
 import GeneralExerciseView from './views/GeneralExerciseView';
-import QuestionnaireView from './views/QuestionnareView';
+import QuestionnaireView from './views/QuestionnaireView';
 
 ReactDOM.render(
   <Router>
