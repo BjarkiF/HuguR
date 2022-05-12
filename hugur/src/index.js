@@ -21,7 +21,7 @@ import GeneralExerciseView from './views/GeneralExerciseView';
 import LoginView from './views/LoginView';
 import RegisterView from './views/RegisterView';
 import ProfileView from './views/ProfileView';
-// Initialize the FirebaseUI Widget using Firebase.
+import QuestionnaireView from './views/QuestionnaireView';
 
 ReactDOM.render(
   <Router>
@@ -41,6 +41,7 @@ ReactDOM.render(
       <Route path="/login" element={ <LoginView /> } />
       <Route path="/register" element={ <RegisterView /> } />
       <Route path="/profile" element={ <ProfileView /> } />
+      <Route path="/questionnaire" element={ <QuestionnaireView />} />
     </Routes>
     <Footer />
   </Router>,
