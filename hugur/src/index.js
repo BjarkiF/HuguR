@@ -5,7 +5,7 @@ import './styles/commonStyles.css';
 import './utils/firebase';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import CouncellerView from "./views/CouncellerView";
 import DashboardView from "./views/DashboardView";
 import EatView from "./views/EatView";
@@ -22,6 +22,8 @@ import LoginView from './views/LoginView';
 import RegisterView from './views/RegisterView';
 import ProfileView from './views/ProfileView';
 import QuestionnaireView from './views/QuestionnaireView';
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
+import QuestionResultView from './views/QuestionResultView';
 
 ReactDOM.render(
   <Router>
@@ -40,13 +42,29 @@ ReactDOM.render(
       <Route path="/exercises/:category" element={ <GeneralExerciseView />} />
       <Route path="/login" element={ <LoginView /> } />
       <Route path="/register" element={ <RegisterView /> } />
-      <Route path="/profile" element={ <ProfileView /> } />
-      <Route path="/questionnaire" element={ <QuestionnaireView />} />
+      <Route path="/profile" element={ 
+        <RequireAuth redirect="/login">
+          <ProfileView />
+        </RequireAuth>
+        }
+      />
+      <Route path="/questionnaire" element={ 
+        <RequireAuth redirect="/login">
+          <QuestionnaireView />
+        </RequireAuth>
+        }
+      />
+      <Route path="/results" element={ <QuestionResultView /> } />
     </Routes>
     <Footer />
   </Router>,
   document.getElementById('root')
 );
+
+function RequireAuth({ children, redirect }) {
+  const auth = getAuth();
+  return auth.currentUser ? children : <Navigate to={redirect} />;
+}
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
