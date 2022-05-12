@@ -10,7 +10,7 @@ const DashboardCardList = ({ cards }) => {
             <Grid className='cardContainer' container spacing={2}>
                 {cards.map((card) => (
                     <Grid key={card.id}item lg={4}>
-                        <DashCard card={card.data()} />
+                        <DashCard card={card} />
                     </Grid>
                 ))}
             </Grid>

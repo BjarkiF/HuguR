@@ -5,31 +5,19 @@ import DashboardCardList from '../../Components/DashboardCardList';
 import WelcomeHeader from '../../Components/WelcomeHeader';
 //import cards from '../../data/Cards';
 import { db } from '../../utils/firebase';
-import { collection, getDocs } from 'firebase/firestore';
+import { onSnapshot, collection } from 'firebase/firestore';
 
-const DashboardView = props => {
+const DashboardView = () => {
     const [cards, setCards] = useState([]);
-    const [status, setStatus] = useState(false);
-
     useEffect(() => {
-        if (!status) {
-            fetchCards();
-            updateStatus(true);
-        }
-    });
-
-    const fetchCards = async () => {
-        const response = await getDocs(collection(db, "categories"));
-
-        response.forEach((item)=>{
-            console.log(item);
-            setCards([...cards, item]);
-        });
-    };
-
-    const updateStatus = (bool) => {
-            setStatus(bool);
-    }
+        onSnapshot(collection(db, "categories"), (snapshot) => {
+            setCards(
+                snapshot.docs.map(doc => {
+                    return { id: doc.id, ...doc.data() }
+                })
+            )
+        })
+    }, []);
 
     return (
         <Box>
@@ -45,7 +33,7 @@ const DashboardView = props => {
                 <DashboardCardList cards={cards}/>
             </Box>
         </Box>
-    )   
+    )  
 };
 
 export default DashboardView;

@@ -18,6 +18,10 @@ import SleepView from './views/SleepView';
 import Footer from './Components/Footer';
 import HelpfulVideosView from './views/HelpfulVideosView';
 import GeneralExerciseView from './views/GeneralExerciseView';
+import LoginView from './views/LoginView';
+import RegisterView from './views/RegisterView';
+import ProfileView from './views/ProfileView';
+// Initialize the FirebaseUI Widget using Firebase.
 
 ReactDOM.render(
   <Router>
@@ -34,6 +38,9 @@ ReactDOM.render(
       <Route path="/general%20advice/:category" element={ <GeneralAdviceView />} />
       <Route path="/helpful%20videos/:category" element={ <HelpfulVideosView />} />
       <Route path="/exercises/:category" element={ <GeneralExerciseView />} />
+      <Route path="/login" element={ <LoginView /> } />
+      <Route path="/register" element={ <RegisterView /> } />
+      <Route path="/profile" element={ <ProfileView /> } />
     </Routes>
     <Footer />
   </Router>,
