@@ -5,6 +5,7 @@ import { Box } from '@mui/system';
 import { Typography } from '@mui/material';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import { doc, onSnapshot } from 'firebase/firestore';
+import QuestionResultComponent from '../../Components/QuestionResultComponent';
 
 const QuestionResultView = () => {
     const [user, setUser] = useState(null);
@@ -40,9 +41,8 @@ const QuestionResultView = () => {
             ) : (
                 <Box>
                     <Typography variant="h4">Your Results:</Typography>
-                    <Typography variant="body1">In the Stress related questions, your total was {qData.pss}/40 </Typography>
-
-                    <Typography variant="body1">In the Depression related questions, your total was {qData.phq}/27 </Typography>
+                    <Typography variant="h4">{qData.pss}</Typography>
+                    <QuestionResultComponent qdata={qData} />
             </Box>
             )}
         </Box>
