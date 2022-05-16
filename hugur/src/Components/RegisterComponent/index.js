@@ -41,6 +41,7 @@ const RegisterComponent = () => {
     }
 
     return (
+
         <Grid sx={{ maxWidth:"66%", margin: 'auto', display: 'flex', flexFlow: 'column', justifyContent: 'center' }}>
         <Typography variant="h3" sx={{  paddingBottom: 6}}>Sign Up</Typography>
         { error && <Typography variant="body1" sx={{ color: "red" }}>{error}</Typography>}

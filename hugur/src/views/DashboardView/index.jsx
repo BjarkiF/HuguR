@@ -1,11 +1,24 @@
 import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import DashboardCardList from '../../Components/DashboardCardList';
 import WelcomeHeader from '../../Components/WelcomeHeader';
-import cards from '../../data/Cards';
+//import cards from '../../data/Cards';
+import { db } from '../../utils/firebase';
+import { onSnapshot, collection } from 'firebase/firestore';
 
 const DashboardView = () => {
+    const [cards, setCards] = useState([]);
+    useEffect(() => {
+        onSnapshot(collection(db, "categories"), (snapshot) => {
+            setCards(
+                snapshot.docs.map(doc => {
+                    return { id: doc.id, ...doc.data() }
+                })
+            )
+        })
+    }, []);
+
     return (
         <Box>
             <Box>
@@ -20,7 +33,7 @@ const DashboardView = () => {
                 <DashboardCardList cards={cards}/>
             </Box>
         </Box>
-    )   
+    )  
 };
 
 export default DashboardView;
