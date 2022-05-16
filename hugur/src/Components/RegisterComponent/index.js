@@ -41,15 +41,16 @@ const RegisterComponent = () => {
     }
 
     return (
-        <Grid sx={{ maxWidth:"66%" }}>
-        <Typography variant="h3">Sign Up</Typography>
+
+        <Grid sx={{ maxWidth:"66%", margin: 'auto', display: 'flex', flexFlow: 'column', justifyContent: 'center' }}>
+        <Typography variant="h3" sx={{  paddingBottom: 6}}>Sign Up</Typography>
         { error && <Typography variant="body1" sx={{ color: "red" }}>{error}</Typography>}
         <Box component="form" noValidate autoComplete="off" onSubmit={register}>
             <TextField label="Email" placeholder='Enter Email' fullWidth required onChange={(e) => setEmail(e.target.value)} />
-            <TextField label="Password" placeholder='Enter Password' type="password" fullWidth required onChange={(e) => setPassword(e.target.value)}/>
+            <TextField sx={{  margin: '18px 0' }} label="Password" placeholder='Enter Password' type="password" fullWidth required onChange={(e) => setPassword(e.target.value)}/>
             <TextField label="Confirm Password" placeholder='Confirm Password' type="password" fullWidth required onChange={(e) => setPassConfirm(e.target.value)}/>
-            <TextField label="Name" placeholder="Name" fullWidth required onChange={(e) => setName(e.target.value)}/>
-            <Button type='submit' variant="contained" fullWidth>Sign Up</Button>
+            <TextField sx={{  margin: '18px 0' }} label="Name" placeholder="Name" fullWidth required onChange={(e) => setName(e.target.value)}/>
+            <Button type='submit' color='success' variant="contained" fullWidth>Sign Up</Button>
         </Box>
         </Grid>
     )

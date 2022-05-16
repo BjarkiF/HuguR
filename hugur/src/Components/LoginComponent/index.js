@@ -18,19 +18,24 @@ const LoginComponent = () => {
         }
 
     return (
-        <Grid sx={{ maxWidth:"66%" }}>
-            <Typography variant="h3">Sign In</Typography>
+
+        <Grid sx={{ maxWidth:"66%", margin: 'auto', display: 'flex', flexFlow: 'column', justifyContent: 'center' }}>
+            <Typography variant="h3" sx={{  paddingBottom: 6}}>Sign In</Typography>
             <Box component="form" noValidate autoComplete="off" onSubmit={login}>
                 <TextField label="Email" placeholder='Enter Email' fullWidth required onChange={(e) => setEmail(e.target.value)} />
-                <TextField label="Password" placeholder='Enter Password' type="password" fullWidth required onChange={(e) => setPassword(e.target.value)}/>
-                <Button type='submit' variant="contained" fullWidth>Sign In</Button>
+                <TextField sx={{  margin: '18px 0' }}  label="Password" placeholder='Enter Password' type="password" fullWidth required onChange={(e) => setPassword(e.target.value)}/>
+                <Button type='submit' color='success' variant="contained" fullWidth>Sign In</Button>
             </Box>
-            <Typography variant="body1">
+            <Typography sx={{  marginTop: '16px' }}variant="body1">
+
+        
                 <Link to="#">
                 Forgot Password?
                 </Link>
             </Typography>
-            <Typography variant="body2">
+
+            <Typography sx={{  margin: '18px 0' }}  variant="body2">
+
                 <Link to="/register">
                 Don't have an account? Sign up.
                 </Link>

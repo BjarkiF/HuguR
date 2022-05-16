@@ -43,7 +43,7 @@ const cards = [
     },
     {
         'name': 'Programs',
-        'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet mollis purus a feugiat. Vivamus aliquet erat et felis ultrices, id facilisis urna pulvinar.',
+        'description': 'Here you can find various programs advertised by the university',
         'img': 'https://ouch-cdn2.icons8.com/jEdRBFhtTgtTJCJF68I-GJNXjRGBS1t1LaLbFb38Jlo/rs:fit:912:912/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNTc5/LzRjM2QzMGM1LWJj/NjEtNDA0NC1hZDhm/LTE4MTZlNmYwY2Mz/NS5wbmc.png',
         'path': '/programs',
     },
