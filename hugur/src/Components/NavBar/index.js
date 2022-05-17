@@ -17,16 +17,6 @@ const NavBar = () => {
         });
     }, []);
 
-    const handleClick = (country) =>  {
-        switch(country) {
-            case 0:
-                console.log("English!")
-                break
-            default:
-                console.log("Íslenska!")
-        }
-    }
-
     const LoginButton = () => {
         if (user) {
             return  <IconButton component={ Link } to="/profile">
@@ -55,8 +45,6 @@ const NavBar = () => {
             </IconButton>
             <Container maxWidth="xl" sx={{ display:'flex', flexDirection:'row-reverse' }}>
                 <Toolbar sx={{ display:'flex', flexDirection:'row', color:'#000000' }}>
-                    <Typography variant="h6" onClick={() => {handleClick(1)}} sx={{ fontFamily:'dosis', mr:1 }}>IS</Typography>
-                    <Typography variant="h6" onClick={() => {handleClick(0)}} sx={{ fontFamily:'dosis', mr:5 }}>EN</Typography>
                     <LoginButton />
                 </Toolbar>
             </Container>

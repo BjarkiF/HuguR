@@ -108,8 +108,8 @@ const QuestionnaireView = () => {
         <Box>
             { answered ? (
                 <Box>
-                    <Typography variant="h4">You have already answered the questionnaires!</Typography>
-                    <Button variant="contained" color="warning" onClick={handleAnsweredClick}>Answer again and Overwrite</Button>
+                    <Typography sx={{ mt:5 }} variant="h4">You have already answered the questionnaires!</Typography>
+                    <Button sx={{ mt:10 }} variant="contained" color="warning" onClick={handleAnsweredClick}>Answer again and Overwrite</Button>
                 </Box>
             ) : (
                 <Box>

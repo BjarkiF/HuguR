@@ -24,6 +24,7 @@ import ProfileView from './views/ProfileView';
 import QuestionnaireView from './views/QuestionnaireView';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import QuestionResultView from './views/QuestionResultView';
+import ProductivityView from './views/ProductivityView';
 
 ReactDOM.render(
   <Router>
@@ -37,6 +38,7 @@ ReactDOM.render(
       <Route path="/programs" element={ <ProgramView /> } />
       <Route path="/relax" element={ <RelaxView /> } />
       <Route path="/sleep" element={ <SleepView /> } />
+      <Route path="/productivity" element={ <ProductivityView /> } />
       <Route path="/general%20advice/:category" element={ <GeneralAdviceView />} />
       <Route path="/helpful%20videos/:category" element={ <HelpfulVideosView />} />
       <Route path="/exercises/:category" element={ <GeneralExerciseView />} />
