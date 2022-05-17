@@ -1,6 +1,6 @@
 import { Button, Typography } from '@mui/material';
-import { pink } from '@mui/material/colors';
 import { Box } from '@mui/system';
+import { Link } from 'react-router-dom';
 import React from 'react';
 
 const WelcomeHeader = () => {
@@ -19,7 +19,7 @@ const WelcomeHeader = () => {
             <Typography variant="h4" component="div" sx={{ fontFamily:'dosis', mb:5 }}>
                 How are you feeling today?
             </Typography>
-            <Button variant="contained" color="success" size="large" sx={{ backgroundColor:'#81B93E', mb: 10 } } >
+            <Button component={ Link } to="/questionnaire" variant="contained" color="success" size="large" sx={{ backgroundColor:'#81B93E', mb: 10 } } >
                 Go to Questionnaire
             </Button>
         </Box>

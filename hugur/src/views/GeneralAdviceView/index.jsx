@@ -7,9 +7,22 @@ const GeneralAdviceView = () => {
 
     return (
         <div>
-            <h3>General Advice</h3>
+            <h3 className='AdviceTitle'>General Advice</h3>
             <img className="AdviceImg" src='https://ouch-cdn2.icons8.com/84YfJ-zmrSn5mTel8itZt4TZUUq3yDroERkfRa5v-NU/rs:fit:912:912/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvODE2/L2NhZmFiZTA0LTZl/NDEtNGJhYy05ODhj/LWRhNzI2N2NkZjc2/NC5wbmc.png' alt='Check internet please' />
-            <p className="AdviceDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            <h3 className="AdviceDescription AdviceTitle">Benefits of exercise</h3>
+            <p className="AdviceText">
+
+                It can reduce your risk of major illnesses, such as coronary heart disease, stroke, type 2 diabetes and cancer and lower your risk of early death by up to 30%.<br/>
+                Research shows that physical activity can also boost self-esteem, mood, sleep quality and energy, as well as reducing your risk of stress, clinical depression, dementia and Alzheimer's disease.<br/>
+
+                It's free, easy to take, has an immediate effect and you don't need a GP to get some. Its name? Exercise.<br/>
+
+                Exercise is the miracle cure we've always had, but for too long we've neglected to take our recommended dose. Our health is now suffering as a consequence.<br/>
+
+                This is no snake oil. Whatever your age, there's strong scientific evidence that being physically active can help you lead a healthier and happier life.<br/>
+
+                People who exercise regularly have a lower risk of developing many long-term (chronic) conditions, such as heart disease, type 2 diabetes, stroke, and some cancers.<br/>
+            </p>
         </div>
     )
 };

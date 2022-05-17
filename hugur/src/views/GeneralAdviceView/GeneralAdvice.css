@@ -1,13 +1,27 @@
+.AdvicePage{
+    height: 74%;
+}
+
+.AdviceTitle {
+    padding: 0;
+    margin: 0;
+}
+
 .AdviceDescription{
-    text-align: justify;
-    font-size: 21px;
     color: #5e615e;
-    padding: 30px;
-    margin: 23px 35px;
+    margin-bottom: 23px;
 }
 
 .AdviceImg{
     padding: 15px;   
-    height: 50%;
-    width: 50%; 
+    height: 20%;
+    width: 20%; 
+}
+
+
+.AdviceText {
+    max-width: 900px;
+    margin: auto;
+    padding: 0 30px;
+    font-size: 20px;
 }
